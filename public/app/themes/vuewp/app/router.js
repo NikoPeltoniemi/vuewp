@@ -2,9 +2,9 @@ import Vue				from 			'vue'
 import VueRouter		from 			'vue-router'
 import VueResource		from			'vue-resource'
 
-import HomeView			from 			'./views/HomeView.vue'
-import PostView			from 			'./views/PostView.vue'
-import PageView			from			'./views/PageView.vue'
+const HomeView = () => import('./views/HomeView.vue')
+const PostView = () => import('./views/PostView.vue')
+const PageView = () => import('./views/PageView.vue')
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
